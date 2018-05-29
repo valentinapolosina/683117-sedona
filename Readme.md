@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валентина Полосина](https://up.htmlacademy.ru/htmlcss/21/user/683117).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
