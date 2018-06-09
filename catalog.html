@@ -8,42 +8,62 @@
 	</head>
 	<body>
 		<div class="container">
-<header class="main-header">
-		<a class="main-header-logo"  href="index.html">
-		 <img src="img/header-logo.png" alt="лого навигации" width="138" height="70">
-		</a>
-			<ul class="site-navigation">
-				 <li><a href="info.html">информация</a></li>
-				 <li><a href="photo_and_video.html">фото и видео</a></li>
-				 <li><a href="map.html">карта штата</a></li>
-				 <li class="site-navigation-current">
-					<a href="hotels.html">гостиницы</a>
-				</li>
-				</ul>
-</header>
+      <header class="main-header">
+		    <a class="main-header-logo"  href="index.html">
+		      <img src="img/header-logo.png" alt="лого навигации" width="138" height="70">
+		    </a>
+			  <ul class="site-navigation">
+				   <li><a href="info.html">информация</a></li>
+				   <li><a href="photo_and_video.html">фото и видео</a></li>
+				   <li><a href="map.html">карта штата</a></li>
+				   <li class="site-navigation-current">
+					 <a href="hotels.html">гостиницы</a>
+				   </li>
+			  </ul>
+      </header>
 
 <main>
 	 <section="filters">
-	 <ul>
-		 <li><p>инфраструктура:</p></li>
-		 <li>бассейн</li>
-		 <li>парковка</li>
-		 <li>wi-fi</li>
-	 </ul>
-
-	 <ul class="housing">
-		<li><p>Тип жилья^</p></li>
-		<li>Гостиница</li>
-		<li>Модель</li>
-		<li>Апартаменты</li>
-	 </ul>
-
-	 <div class="mini-table">
-		<p>Стоимость в сутки(р):</p>
-		<p>от 0 до 3000</p>
-			<a class="button" href="hotels.html">показать</a>
-	 </div>
-	</section>
+	   <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="infrastructure">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+            <legend>Тип жилья:</legend>
+            <ul class="housing">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked="">
+                <label for="apartment">апартаменты</label>
+              </li>
+            </ul>
+            <div class="mini-table">
+		          <p>Стоимость в сутки(р):</p>
+		          <p>от 0 до 3000</p>
+			        <button class="button" href="hotels.html">показать</button>
+	            </div>
+          </fieldset>
+	  </section>
 
 	<section class="sorting">
 		<div class="search">

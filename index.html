@@ -89,7 +89,38 @@
   	    <h2>Заинтересовались?</h2>
   	    <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="button" href="#">Поиск гостиницы в седоне</a>
-  	    <!-- Здесь будет форма -->
+  	    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label for="appointment-arrival">Дата заезда:</label>
+            <input id="appointment-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-departure">Дата выезда:</label>
+            <input id="appointment-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+          </p>
+          <p class="appointment-item">
+            <button class="button">
+             -
+            </button>
+            <label for="appointment-adults">Взрослые:</label>
+            <input id="appointment-adults" type="text" name="adults" 
+            value="" placeholder="2">
+            <button class="button">
+             +
+            </button>        
+          </p>
+          <p class="appointment-item">
+            <button class="button">
+             -
+            </button>
+            <label for="appointment-children">Дети:</label>
+            <input id="appointment-children" type="text" name="children" 
+            value="" placeholder="0">
+            <button class="button">
+             +
+            </button>        
+          </p>
+        </form>
       </section>  
       <section class="map">
         <!-- здесь будет карта -->
