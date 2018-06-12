@@ -50,6 +50,14 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
+}
+
+.reasons {
+ text-align: center;
+ font-size: 14px;
+ line-height: 26px;
+ font-weight: normal;
 }
 
 .reasons-with-picture {
@@ -110,14 +118,63 @@ background-color: #eeeeee;
   color: #000000;
 }
 
-.button.button-search {
+.button.link-search {
 	font: inherit;
-
+	font-size:21px;
+	font-weight: 26px;
   text-align: center;
-  color: #ffffff;
   text-transform: uppercase;
 
   background-color: #766357;
-  border: none;
+color: #ffffff;
+}
+
+.button.link-search a:active {
+background-color: #503e33;
+rgba: (80, 62, 51, 0.5);
+}
+
+.button.link-search a:focus,
+.button.link-search a:hover {
+	background-color: #604e43;
+}
+
+.appointment-item input {
+  font-size: 14px;
+  font-weight: 26px;
+  color: #000000;
+  
+  border: 2px solid #e5e5e5;
+}
+
+.button.plus-minus {
+	background-color:#f2f2f2;
+    border:none;
+}
+
+.button.search {
+font: inherit;
+	font-size:14px;
+	font-weight: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+color: #ffffff;
+}
+
+.button.seacrh a:hover,
+.button.search a:focus {
+	background-color:669ec0;
+}
+
+.button.search a:active {
+	rgba: (84, 150, 189, 0.5);
+}
+
+.social-button {
+	backrgound-color:#81b3d2;
+	color:#ffffff;
+	list-style: none;
 
 }
