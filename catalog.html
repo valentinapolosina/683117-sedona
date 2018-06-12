@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<meta charset="utf-8">
 		<title>SEDONA</title>
+    <link href="css/normalize.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <meta charset="utf-8"> 
 	</head>
 	<body>
 		<div class="container">
@@ -23,54 +24,55 @@
       </header>
 
 <main>
-	 <section="filters">
-	   <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul class="infrastructure">
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-            <legend>Тип жилья:</legend>
-            <ul class="housing">
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">гостиница</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">мотель</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked="">
-                <label for="apartment">апартаменты</label>
-              </li>
-            </ul>
-            <div class="mini-table">
-		          <p>Стоимость в сутки(р):</p>
-		          <p>от 0 до 3000</p>
-			        <button class="button" href="hotels.html">показать</button>
-	            </div>
-          </fieldset>
-	  </section>
+  <section="filters">
+	  <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+        <ul class="infrastructure">
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </li>
+        </ul>
+        <legend>Тип жилья:</legend>
+        <ul class="housing">
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">гостиница</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+            <label for="motel">мотель</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartment" id="apartment" checked="">
+            <label for="apartment">апартаменты</label>
+          </li>
+        </ul>
+        <div class="mini-table">
+		      <p>Стоимость в сутки(р):</p>
+		      <p>от 0 до 3000</p>
+			    <button class="button" href="hotels.html">показать</button>
+	      </div>
+      </fieldset>
+    </form>
+	</section>
 
 	<section class="sorting">
 		<div class="search">
-				<p>Найдено:3</p>
+		  <p>Найдено:3</p>
 		</div>
 		<div class="sorting-list">
-			<ul>
+	    <ul>
 				<li>сортировка:</li>
 				<li>по цене</li>
 				<li>по рейтингу</li>
@@ -83,7 +85,7 @@
 	</section>
 
 
- <section class="catalog">
+  <section class="catalog">
 	 <h2 class="visually-hidden">Список гостиниц</h2>
 				<ul class="catalog-list">
 					<li class="catalog-item">
@@ -156,15 +158,15 @@
 						</div>
 					</li>
 				</ul>
- </section>
+  </section>
 </main>
 
 <footer class="main-footer">
 	<p class="hashtag">#VISITSEDONA</p>
 		 <ul class="footer-social">
-					<li><a class="social-button" href="#">Вконтакте</a></li>
-					<li><a class="social-button" href="#">Фейсбук</a></li>
-					<li><a class="social-button" href="#">Инстаграм</a></li>
+			  <li><a class="social-button" href="#">Вконтакте</a></li>
+				<li><a class="social-button" href="#">Фейсбук</a></li>
+				<li><a class="social-button" href="#">Инстаграм</a></li>
 		 </ul>
 	<p class="footer-copyright">website by html academy</p>
 </footer>

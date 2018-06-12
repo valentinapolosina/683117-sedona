@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+
+  list-style: none;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active {
+  color:#766357;
+}
+
+ main {
+   background-color: #ffffff;
+}
+
+.main-promo {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.reasons-with-picture {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+}
+
+.reason-with-picture {
+	background-color: #81b3d2;
+	color: #ffffff;
+	  text-align: left;
+
+}
+
+.devil-bridge-picture,
+.sedona-picture {
+	text-align:right;
+}
+
+
+.advice {
+	background-color: #ffffff;
+	color:#000000;
+}
+
+.area,
+.road,
+.tourist
+{
+color:#000000;
+background-color: #eeeeee;
+}
+
+.landmark {
+	color:#000000;
+background-color: #eeeeee;
+}
+
+.interested {
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.interested h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+
+	color:#000000;
+}
+
+.interested p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+
+  color: #000000;
+}
+
+.button.button-search {
+	font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+
+}
