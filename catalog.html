@@ -27,8 +27,8 @@
 	  <h2 class="visually-hidden">Фильтр товаров</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
-        <legend>Инфраструктура:</legend>
-        <ul class="infrastructure">
+        <legend class="staple">Инфраструктура:</legend>
+        <ul class="list-reset">
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
@@ -42,8 +42,10 @@
             <label for="wi-fi">Wi-Fi</label>
           </li>
         </ul>
-        <legend>Тип жилья:</legend>
-        <ul class="housing">
+      </fieldset>
+      <fieldset>
+        <legend class="staple">Тип жилья:</legend>
+        <ul class="list-reset">
           <li class="filter-option">
             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">гостиница</label>
@@ -57,7 +59,9 @@
             <label for="apartment">апартаменты</label>
           </li>
         </ul>
-        <div class="mini-table">
+      </fieldset>
+      <fieldset>
+        <div class="filter-option">
 		      <p>Стоимость в сутки(р):</p>
 		      <p>от 0 до 3000</p>
 			    <button class="button show" href="hotels.html">показать</button>
@@ -71,7 +75,7 @@
 		  <p>Найдено:3</p>
 		</div>
 		<div>
-	    <ul class="sorting-list">
+	    <ul class="list-reset">
 				<li>сортировка:</li>
 				<li>по цене</li>
 				<li>по рейтингу</li>
@@ -86,7 +90,7 @@
 
   <section class="catalog">
 	 <h2 class="visually-hidden">Список гостиниц</h2>
-				<ul class="catalog-list">
+				<ul class="list-reset">
 					<li class="catalog-item">
 						<figure class="catalog-item-image">
 							 <img src="img/amara.jpg" alt="гостиница" width="135" height="90">
@@ -162,7 +166,7 @@
 
 <footer class="main-footer">
 	<p class="hashtag">#VISITSEDONA</p>
-		 <ul class="footer-social">
+		 <ul class="list-reset">
 			  <li><a class="social-button" href="#">Вконтакте</a></li>
 				<li><a class="social-button" href="#">Фейсбук</a></li>
 				<li><a class="social-button" href="#">Инстаграм</a></li>
