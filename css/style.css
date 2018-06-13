@@ -294,3 +294,20 @@ color:#a5c9df;
 .name-hotel:active {
 	color:#d1d1d1;
 }
+
+
+.catalog-list {
+	list-style: none;
+}
+
+.sorting-list {
+	list-style: none;
+}
+
+.infrastructure {
+	list-style: none;
+}
+
+.housing {
+	list-style: none;
+}
