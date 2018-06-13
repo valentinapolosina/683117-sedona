@@ -20,7 +20,7 @@ a {
 
 .container {
 	margin: 0 auto;
-	width: :1200px;
+	width: 1200px;
 }
 
 .main-header {
@@ -32,18 +32,17 @@ a {
 
   list-style: none;
 }
-/*
+
 .main-promo {
-  background-image: url("img/main-logo.jpg");
+  background-image: url("../img/main-logo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #ffffff;
   width: 1200px;
-  height: 800px;
-  background-size: auto;
+  height: 475px;
+  background-size: cover;
 }
 
-*/
 
 .site-navigation {
   list-style: none;
@@ -192,17 +191,18 @@ color: #ffffff;
 }
 
 .map {
-	background-image: url("img/map.jgp")
+	background-image: url("../img/map.jpg");
 	width: 1200px;
-	height: 595px;
+	height: 470px;
 	background-position: top center;
   background-repeat: no-repeat;
   background-color: #ffffff;
+  background-size: cover;
 }
 
 .button.seacrh a:hover,
 .button.search a:focus {
-	background-color:669ec0;
+	background-color:#669ec0;
 }
 
 .button.search a:active {
@@ -226,9 +226,13 @@ color: #ffffff;
 }
 
 .filters {
-	background-image: url("img/filters.jpg");
+	background-image: url("../img/filter.jpg");
 	width: 1200px;
-	height: 800px;
+	height: 215px; 
+	background-size: cover;
+	background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .sorting {
