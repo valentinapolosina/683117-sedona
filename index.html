@@ -17,7 +17,7 @@
       	    <li><a href="info.html">информация</a></li>
       	    <li><a href="photo_and_video.html">фото и видео</a></li>
       	    <li><a href="map.html">карта штата</a></li>
-      	    <li><a href="hotels.html">гостиницы</a></li>
+      	    <li><a href="catalog.html">гостиницы</a></li>
           </ul> 
       </header>
 
@@ -25,7 +25,7 @@
 
       <h1 class="visually-hidden">Седона</h1>
       <div class="main-promo">
-	      <img src="img/main-logo.jpg" alt="Седона" width="2706" height="1804">
+     <img src="img/main-logo.jpg" alt="Седона" width="2706" height="1804"> 
 	      <b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b>
       </div>
       <div class="reasons">
@@ -95,33 +95,34 @@
   	    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="appointment-item">
             <label for="appointment-arrival">Дата заезда:</label>
-            <input id="appointment-arrival" type="text" name="date-arrival" value="" placeholder="24 апреля 2017">
+            <input id="appointment-arrival" type="text" name="date-arrival" value="24 апреля 2017">
           </p>
           <p class="appointment-item">
             <label for="appointment-departure">Дата выезда:</label>
-            <input id="appointment-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+            <input id="appointment-departure" type="text" name="date-departure" value="4 июля 2017">
           </p>
           <p class="appointment-item">
-            <button class="button">
+            <button class="button plus-minus">
              -
             </button>
             <label for="appointment-adults">Взрослые:</label>
             <input id="appointment-adults" type="text" name="adults" 
             value="" placeholder="2">
-            <button class="button">
+            <button class="button plus-minus">
              +
             </button>        
           </p>
           <p class="appointment-item">
-            <button class="button">
+            <button class="button plus-minus">
              -
             </button>
             <label for="appointment-children">Дети:</label>
             <input id="appointment-children" type="text" name="children" 
             value="" placeholder="0">
-            <button class="button">
+            <button class="button plus-minus">
              +
-            </button>        
+            </button>     
+            <a class="button search" href="#">Найти</a>
           </p>
         </form>
       </section>  

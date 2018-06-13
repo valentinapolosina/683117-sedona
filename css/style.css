@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+	margin: 0 auto;
+	width: :1200px;
+}
+
 .main-header {
   font-size: 14px;
   line-height: 26px;
@@ -27,6 +32,18 @@ a {
 
   list-style: none;
 }
+/*
+.main-promo {
+  background-image: url("img/main-logo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 1200px;
+  height: 800px;
+  background-size: auto;
+}
+
+*/
 
 .site-navigation {
   list-style: none;
@@ -121,7 +138,7 @@ background-color: #eeeeee;
 .button.link-search {
 	font: inherit;
 	font-size:21px;
-	font-weight: 26px;
+	font-weight: 21px;
   text-align: center;
   text-transform: uppercase;
 
@@ -141,7 +158,7 @@ rgba: (80, 62, 51, 0.5);
 
 .appointment-item input {
   font-size: 14px;
-  font-weight: 26px;
+  font-weight: 21px;
   color: #000000;
   
   border: 2px solid #e5e5e5;
@@ -150,17 +167,37 @@ rgba: (80, 62, 51, 0.5);
 .button.plus-minus {
 	background-color:#f2f2f2;
     border:none;
+    color:#a9a9a9;
+}
+
+.button.plus-minus:hover,
+.button.plus-minus:focus{
+	color:#000000;
+}
+
+.button.plus-minus:active {
+	color:#81b3d2;
+	border:none;
 }
 
 .button.search {
 font: inherit;
 	font-size:14px;
-	font-weight: 26px;
+	font-weight: 21px;
   text-align: center;
   text-transform: uppercase;
 
   background-color: #81b3d2;
 color: #ffffff;
+}
+
+.map {
+	background-image: url("img/map.jgp")
+	width: 1200px;
+	height: 595px;
+	background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .button.seacrh a:hover,
@@ -173,8 +210,87 @@ color: #ffffff;
 }
 
 .social-button {
-	backrgound-color:#81b3d2;
+	background-color:#81b3d2;
 	color:#ffffff;
 	list-style: none;
 
+}
+
+
+.inner-page {
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.filters {
+	background-image: url("img/filters.jpg");
+	width: 1200px;
+	height: 800px;
+}
+
+.sorting {
+	  list-style: none;
+
+}
+
+.button.show {
+	background: transparent;
+}
+
+.button.show:hover {
+	background-color:#ffffff;
+	color:#000000;
+	border:none;
+}
+
+.button.detail a:hover,
+.button.detail a:focus {
+	background-color: #669ec0;
+	color:#ffffff;
+}
+
+.button.detail {
+	background-color: #81b3d2;
+	color: #ffffff;
+} 
+
+.button.detail a:active {
+ opacity: 0.5;
+background-color: #5496bd;
+}
+
+.button.book {
+	color:#ffffff;
+    background-color: #766357
+}
+
+.button.book a:active{
+opacity: 0.5;
+background-color: #503e33;
+}
+
+.button.book a:hover,
+.button.book a:focus {
+color:#ffffff;
+background-color: #604e43;
+}
+
+
+.name-hotel {
+	color:#000000;
+	font-size: 21px;
+	font-weight: 26px;
+
+}
+
+.name-hotel:hover,
+.name-hotel:focus{
+color:#a5c9df;
+}
+
+.name-hotel:active {
+	color:#d1d1d1;
 }
