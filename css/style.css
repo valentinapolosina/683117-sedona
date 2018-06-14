@@ -38,8 +38,8 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  width: 1200px;
-  height: 475px;
+  width: 100%;
+  min-height: 475px;
   background-size: cover;
 }
 
@@ -183,18 +183,22 @@ a {
 
 
 
-  .button.plus-minus {
+  .button.plus,
+  .button.minus {
 	background-color:#f2f2f2;
     border:none;
     color:#a9a9a9;
 }
   
-  .button.plus-minus:hover,
-  .button.plus-minus:focus{
+  .button.plus:hover,
+  .button.plus:focus,
+  .button.minus:hover,
+  .button.minus:focus {
 	color:#000000;
 }
 
-  .button.plus-minus:active {
+  .button.plus:active,
+  .button.minus:active {
 	color:#81b3d2;
 	border:none;
 }
@@ -223,8 +227,8 @@ a {
 
    .map {
       background-image: url("../img/map.jpg");
-	  width: 1200px;
-	  height: 470px;
+	  width: 100%;
+	  min-height: 470px;
 	  background-position: top center;
       background-repeat: no-repeat;
       background-color: #ffffff;
@@ -255,7 +259,8 @@ a {
 
 .filters {
   background-image: url("../img/filter.jpg");
-  width: 1200px;
+  width: 100%;
+  min-height: 215px;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -376,4 +381,21 @@ a {
 
   .footer-social {
 	list-style:none;
+  }
+
+
+  .triangle-up {
+  	width: 0px;
+  	height: 0px;
+  	border-left: 9px solid  transparent;
+  	border-right: 9px solid transparent;
+  	border-bottom: 13px solid #cacaca;
+  }
+
+  .triangle-down {
+  	width: 0;
+  	height: 0;
+  	border-left: 9px solid  transparent;
+  	border-right: 9px solid transparent;
+  	border-top: 13px solid #cacaca;
   }

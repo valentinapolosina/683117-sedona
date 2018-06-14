@@ -57,10 +57,10 @@
           </div>
         </div>
         <div class="reason-with-picture">
+          <figure class="devil-bridge-picture">
+            <img src="img/bridge.jpg" alt="мост дьявола" width="800" height="400">
+          </figure>
           <div class="devil-bridge">
-            <figure class="devil-bridge-picture">
-              <img src="img/bridge.jpg" alt="мост дьявола" width="800" height="400">
-            </figure>
             <h2>там есть мост дьявола</h2>
             <p>-№2-</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -100,24 +100,28 @@
             <input id="appointment-departure" type="text" name="date-departure" value="4 июля 2017">
           </p>
           <p class="appointment-item">
-            <button class="button plus-minus">
+            <aria-label for="button plus-minus">Минус</label>
+            <button class="button minus">
              -
             </button>
             <label for="appointment-adults">Взрослые:</label>
             <input id="appointment-adults" type="text" name="adults" 
             value="" placeholder="2">
-            <button class="button plus-minus">
+            <aria-label for="button plus">Плюс</lavel>
+            <button class="button plus">
              +
             </button>        
           </p>
           <p class="appointment-item">
-            <button class="button plus-minus">
+            <aria-label for="button minus">Минус</label>
+            <button class="button minus">
              -
             </button>
             <label for="appointment-children">Дети:</label>
             <input id="appointment-children" type="text" name="children" 
             value="" placeholder="0">
-            <button class="button plus-minus">
+            <aria-label for="button plus">Плюс</label>
+            <button class="button plus">
              +
             </button>     
             <a class="button search" href="#">Найти</a>
