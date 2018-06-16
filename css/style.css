@@ -399,3 +399,70 @@ a {
   	border-right: 9px solid transparent;
   	border-top: 13px solid #cacaca;
   }
+
+
+
+
+
+
+
+/* немного сетки */
+
+
+.main-header {
+  position: relative;
+  min-height: 56px;
+  background-color: #dcf3e0;
+
+
+}
+
+
+
+.site-navigation {
+	margin: 0;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 31px;
+  padding-top: 31px;
+
+}
+
+.main-header-logo {
+	width: 138px;
+	min-height: 70px;
+	position: absolute;
+	margin-right: -69px;
+	right: 50%;
+	top: 50%;
+	
+}
+
+
+.sedona-with-picture {
+ min-height: 256px;
+ align-items: space-between;
+}
+
+
+.reason-with-picture1 {
+	display: flex;
+}
+
+
+.landmark {
+	min-height: 256px;
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+}
+
+
+
+
+
