@@ -444,6 +444,14 @@ a {
 	
 }
 
+
+.main-promo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .sedona-wrapper {
 	display: flex;
 	flex-direction: row;
