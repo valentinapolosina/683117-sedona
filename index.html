@@ -24,10 +24,13 @@
       <!--
       <h1 class="visually-hidden">Седона</h1>
 
-       -->
+       --> 
       <div class="main-promo">
-	      
-      </div>
+        <img src="img/welcome.png" alt="welcome" width="188" height="45"> 
+        <img scr="img/to.png" alt="to the gorgeous" width="176" height="30">
+        <img scr="img/sedona.png" alt="sedona" width="458" height="78">
+        <img src="img/canyon-sucks.png" alt="because the grand canyon sucks!" width="296" height="80">
+              </div>
       <div class="reasons">
         <b>Седона-небольшой городок в Аризоне, заслуживающий большего!</b>
 	      <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -36,14 +39,16 @@
 
       <section class="five-reason">
         <div class="reason-with-picture">
-          <div class="sedona-real-city">
-            <h2>настоящий городок</h2>
-            <p>-№1-</p>
-            <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="sedona-wrapper">
+            <div class="sedona-real-city">
+              <h2>настоящий городок</h2>
+              <p>-№1-</p>
+              <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <figure class="sedona-picture">
+              <img src="img/city.jpg" alt="Город Седона" width="800" height="401">
+            </figure>
           </div>
-          <figure class="sedona-picture">
-            <img src="img/city.jpg" alt="Город Седона" width="800" height="401">
-          </figure>
         </div>
         <div class="advice">
           <div class="housing">
@@ -59,14 +64,16 @@
             <p>не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="reason-with-picture1">
-          <figure class="devil-bridge-picture">
-            <img src="img/bridge.jpg" alt="мост дьявола" width="800" height="400">
-          </figure>
-          <div class="devil-bridge">
-            <h2>там есть мост дьявола</h2>
-            <p>-№2-</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="reason-with-picture">
+          <div class="devil-wrapper">
+            <figure class="devil-bridge-picture">
+              <img src="img/bridge.jpg" alt="мост дьявола" width="800" height="400">
+            </figure>
+            <div class="devil-bridge">
+              <h2>там есть мост дьявола</h2>
+              <p>-№2-</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
           </div>
         </div>
         <div class="landmark">
@@ -92,21 +99,22 @@
   	      <h2>Заинтересовались?</h2>
   	      <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-        <a class="button link-search" href="#">Поиск гостиницы в седоне</a>
-  	    <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="appointment-item">
-            <label for="appointment-arrival">Дата заезда:</label>
-            <input id="appointment-arrival" type="text" name="date-arrival" value="24 апреля 2017">
-          </p>
-          <p class="appointment-item">
+        <div class="form-wrapper">
+          <a class="button link-search" href="#">Поиск гостиницы в седоне</a>
+           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="appointment-item">
+                <label for="appointment-arrival">Дата заезда:</label>
+                <input id="appointment-arrival" type="text" name="date-arrival" value="24 апреля 2017">
+              </p>
+              <p class="appointment-item">
             <label for="appointment-departure">Дата выезда:</label>
             <input id="appointment-departure" type="text" name="date-departure" value="4 июля 2017">
           </p>
           <p class="appointment-item">
-            <button class="button minus" aria-label="минус" type="text">
+            <label for="appointment-adults">Взрослые:</label>
+             <button class="button minus" aria-label="минус" type="text">
              -
             </button>
-            <label for="appointment-adults">Взрослые:</label>
             <input id="appointment-adults" type="text" name="adults" 
             value="" placeholder="2">
             <button class="button plus" aria-label="плюс" type="text">
@@ -114,19 +122,20 @@
             </button>        
           </p>
           <p class="appointment-item">
-
+            <label for="appointment-children">Дети:</label>
             <button class="button minus" aria-label="минус" type="text">
              -
             </button>
-            <label for="appointment-children">Дети:</label>
             <input id="appointment-children" type="text" name="children" 
             value="" placeholder="0">
             <button class="button plus" aria-label="плюс" type="text">
              +
-            </button>     
+            </button> 
+            </p>    
             <button class="button search" type="submit">Найти</button>
           </p>
         </form>
+      </div>
       </section>  
       <section class="map">
         <!-- здесь будет карта -->
@@ -134,13 +143,15 @@
     </main>
 
     <footer class="main-footer">
-      <p class="hashtag">#VISITSEDONA</p>
-        <ul class="list-reset">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      <p class="footer-copyright">website by html academy</p>
+      <div class="wrapper">
+        <p class="hashtag">#VISITSEDONA</p>
+          <ul class="list-reset">
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+       <p class="footer-copyright">website by html academy</p>
+      </div>
     </footer>
   </body>
 

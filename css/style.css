@@ -93,8 +93,11 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: left;
+  min-height: 255px;
 
 }
+
+
 
 .devil-bridge-picture,
 .sedona-picture {
@@ -412,7 +415,6 @@ a {
 .main-header {
   position: relative;
   min-height: 56px;
-  background-color: #dcf3e0;
 
 
 }
@@ -439,30 +441,138 @@ a {
 	position: absolute;
 	margin-right: -69px;
 	right: 50%;
-	top: 50%;
 	
 }
 
-
-.sedona-with-picture {
- min-height: 256px;
- align-items: space-between;
+.sedona-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 255px;
 }
 
-
-.reason-with-picture1 {
+.advice {
+	min-height: 255px;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 75px;
+	margin-right: 155px;
+
+}
+
+.devil-wrapper {
+	display: flex;
+  flex-direction: row;
+  min-height: 255px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
 .landmark {
-	min-height: 256px;
+	min-height: 255px;
 	display: flex;
-	align-items: stretch;
+	align-items: center;
 	flex-direction: row;
+	justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding-left: 75px;
+	padding-right: 75px;
+
+}
+
+.form-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 576px;
+	min-height: 480px;
+	justify-content: space-around;
+	align-items: center;
+	margin-left:auto;
+  margin-right:auto;
+  min-height: 250px; 
+
+}
+
+.appointment-item {
+	position: relative;
+
+}
+
+.button.link-search {
+	position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  width: 576px;
+  min-height: 85px;
+
+
+}
+
+.button.search {
+	width: 460px;
+	min-height: 55px;
+}
+
+.main-footer {
+	min-height: 123px;
+
+	
+
+}
+
+.wrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+	
+.footer-copyright {
+  margin: 0;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 100px;
+
+}
+
+.hashtag {
+	 width: 138px;
+	 margin-right: 255px;
+  margin-left: auto;
+}
+
+.social-button {
+  width: 148px;
+  margin-right: 225px;
+  margin-left: auto; 
+
+}
+
+.filter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
 
 
+.sorting {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
 
 
+.list-wrapper {
+  flex-direction: row;
+  display: flex;
+}
 
+
+.list-reset-wrapper {
+	flex-direction: row;
+	display: flex;}
