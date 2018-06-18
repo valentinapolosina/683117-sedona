@@ -293,6 +293,7 @@ a {
 	font-size: 21px;
 	font-weight: bold;
 	font-height: 26px;
+
 }
 
   .list-reset p {
@@ -553,10 +554,16 @@ align-items: center;
   margin-left: auto;
 }
 
+.list-reset.social  {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+
+}
+
 .social-button {
   width: 148px;
-  margin-right: 225px;
-  margin-left: auto; 
+ 
 
 }
 
@@ -568,19 +575,24 @@ align-items: center;
 }
 
 
-.sorting {
+.sorting-items {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 
 
-.list-wrapper {
-  flex-direction: row;
-  display: flex;
+.list-reset.wrapper {
+	display: flex;
+	flex-direction: column;
+
+
 }
 
 
-.list-reset-wrapper {
+
+.catalog-item {
+	display: flex;
 	flex-direction: row;
-	display: flex;}
+}
+

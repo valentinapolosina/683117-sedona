@@ -70,32 +70,35 @@
     </form>
 	</section>
 
-	<section class="sorting">
-		<div class="search">
+	<section class="sorting"> 
+		<div class="sorting-items">
+		 <div class="search">
 		  <p>Найдено:3</p>
-		</div>
-		<div>
-			<div class="list-wrapper">
-	    <ul class="list-reset">
+		 </div>
+			<div class="list">
+	    <ul class="list-reset sorting">
 				<li>сортировка:</li>
 				<li>по цене</li>
 				<li>по рейтингу</li>
 				<li>по типу</li>
 			</ul>
 		</div>
-		</div>
+		<div class="triangle">
 		 <span class="triangle-up"></span>
 		 <span class="triangle-down"></span>
+		</div>
+		</div>
 	</section>
 
 
   <section class="catalog">
 	 <h2 class="visually-hidden">Список гостиниц</h2>
-				<ul class="list-reset">
+				<ul class="list-reset wrapper">
 					<li class="catalog-item">
 						<figure class="catalog-item-image">
 							 <img src="img/amara.jpg" alt="гостиница" width="135" height="90">
 						</figure>
+						<div class="hotel-wrapper">
 						<div class="name-hotel">
 							<h3>amara resort and spa</h3>
 							<div class="price">
@@ -106,6 +109,7 @@
 								<a class="button detail" href="#">Подробнее</a>
 								<a class="button book" href="#">Забронировать</a>
 							</div>
+						</div>
 						</div>
 						<div class="rating">
 							<img src="img/four-stars.svg" alt="4 звезды">
@@ -165,16 +169,17 @@
   </section>
 </main>
 
-<footer class="main-footer">
-	<p class="hashtag">#VISITSEDONA</p>
-		 <ul class="list-reset">
-			  <li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
-		 </ul>
-	<p class="footer-copyright">website by html academy</p>
-</footer>
-
+    <footer class="main-footer">
+      <div class="wrapper">
+        <p class="hashtag">#VISITSEDONA</p>
+          <ul class="list-reset social">
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+       <p class="footer-copyright">website by html academy</p>
+      </div>
+    </footer>
 
 
 </body>
