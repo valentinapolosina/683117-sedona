@@ -62,31 +62,42 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <div class="filter-option">
-              <p>Стоимость в сутки(р):</p>
-              <p>от 0 до 3000</p>
-              <button class="button show" type="sumbit">показать</button>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="3000">
+              </label>
             </div>
-          </fieldset>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="button show" type="sumbit">показать</button>
         </form>
       </section>
       <section class="sorting">
-          <div class="search">
-            <p>Найдено:3</p>
-          </div>
-          <div class="list">
-            <ul class="list-reset sort-type">
-              <li class="for-sorting">сортировка:</li>
-              <li class="for-suction">по цене</li>
-              <li class="for-suction">по рейтингу</li>
-              <li class="for-suction">по типу</li>
-            </ul>
-          </div>
-          <div class="triangle">
-            <span class="triangle-up"></span>
-            <span class="triangle-down"></span>
-          </div>
+        <div class="search">
+          <p>Найдено:3</p>
+        </div>
+        <div class="list">
+          <ul class="list-reset sort-type">
+            <li class="for-sorting">сортировка:</li>
+            <li class="for-suction">по цене</li>
+            <li class="for-suction">по рейтингу</li>
+            <li class="for-suction">по типу</li>
+          </ul>
+        </div>
+        <div class="triangle">
+          <span class="triangle-up"></span>
+          <span class="triangle-down"></span>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
@@ -155,13 +166,13 @@
       </section>
     </main>
     <footer class="main-footer">
-        <p class="hashtag">#VISITSEDONA</p>
-        <ul class="list-reset social">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-        <p class="footer-copyright">website by html academy</p>
+      <p class="hashtag">#VISITSEDONA</p>
+      <ul class="list-reset social">
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+      <p class="footer-copyright">website by html academy</p>
     </footer>
 </body>
 
