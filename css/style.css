@@ -183,21 +183,18 @@ a {
 
 
 
-.button.plus,
-.button.minus {
+.button.plus-minus {
   background-color: #f2f2f2;
   border: none;
   color: #a9a9a9;
 }
 
-.button.plus:hove .button.plus:focus,
-.button.minus:hover,
-.button.minus:focus {
+.button.plus-minus:hover,
+.button.plus-minus:focus {
   color: #000000;
 }
 
-.button.plus:active,
-.button.minus:active {
+.button.plus-minus:active {
   color: #81b3d2;
   border: none;
 }
@@ -232,12 +229,12 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #ffffff;
-  background-size: cov er;
+  background-size: cover;
 }
 
 
 .social-button {
-  b ackground-color: #81b3d2;
+  background-color: #81b3d2;
   color: #ffffff;
   list-style: none;
 }
@@ -441,7 +438,7 @@ a {
   align-items: center;
 }
 
-.sedona-wrapper {
+.reason-with-picture.sedona {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -459,7 +456,7 @@ a {
   margin-right: 155px;
 }
 
-.devil-wrapper {
+.reason-with-picture.devil {
   display: flex;
   flex-direction: row;
   min-height: 255px;
@@ -480,7 +477,7 @@ a {
   padding-right: 75px;
 }
 
-.form-wrapper {
+.interested {
   display: flex;
   flex-direction: column;
   width: 576px;
@@ -511,13 +508,11 @@ a {
 
 .main-footer {
   min-height: 123px;
-}
-
-.wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; 
 }
+
 
 .footer-copyright {
   margin: 0;
@@ -550,7 +545,7 @@ a {
 }
 
 
-.sorting-items {
+.sorting {
   display: flex;
   flex-direction: row;
   justify-content: space-around;

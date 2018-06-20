@@ -17,7 +17,7 @@
         </a>
       <ul class="site-navigation">
         <li><a href="info.html">информация</a></li>
-        <li><a href="photo_and_video.html">фото и видео</a></li>
+        <li><a href="photo-and-video.html">фото и видео</a></li>
         <li><a href="map.html">карта штата</a></li>
         <li><a href="catalog.html">гостиницы</a></li>
       </ul>
@@ -38,8 +38,7 @@
         <p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       </div>
       <section class="five-reason">
-        <div class="reason-with-picture">
-          <div class="sedona-wrapper">
+        <div class="reason-with-picture sedona">
             <div class="sedona-real-city">
               <h2>настоящий городок</h2>
               <p>-№1-</p>
@@ -48,7 +47,6 @@
             <figure class="sedona-picture">
               <img src="img/city.jpg" alt="Город Седона" width="800" height="401">
             </figure>
-          </div>
         </div>
         <div class="advice">
           <div class="housing">
@@ -64,8 +62,7 @@
             <p>не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="reason-with-picture">
-          <div class="devil-wrapper">
+        <div class="reason-with-picture devil">
             <figure class="devil-bridge-picture">
               <img src="img/bridge.jpg" alt="мост дьявола" width="800" height="400">
             </figure>
@@ -74,7 +71,6 @@
               <p>-№2-</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-          </div>
         </div>
         <div class="landmark">
           <div class="area">
@@ -94,12 +90,9 @@
           </div>
         </div>
       </section>
-      <section class="searches">
-        <div class="interested">
+      <section class="interested">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        </div>
-        <div class="form-wrapper">
           <a class="button link-search" href="#">Поиск гостиницы в седоне</a>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="appointment-item">
@@ -112,35 +105,33 @@
             </p>
             <p class="appointment-item">
               <label for="appointment-adults">Взрослые:</label>
-              <button class="button minus" aria-label="минус" type="text">
+              <button class="button plus-minus" aria-label="минус" type="text">
                 -
               </button>
               <input id="appointment-adults" type="text" name="adults" value="" placeholder="2">
-              <button class="button plus" aria-label="плюс" type="text">
+              <button class="button plus-minus" aria-label="плюс" type="text">
                 +
               </button>
             </p>
             <p class="appointment-item">
               <label for="appointment-children">Дети:</label>
-              <button class="button minus" aria-label="минус" type="text">
+              <button class="button plus-minus" aria-label="минус" type="text">
                 -
               </button>
               <input id="appointment-children" type="text" name="children" value="" placeholder="0">
-              <button class="button plus" aria-label="плюс" type="text">
+              <button class="button plus-minus" aria-label="плюс" type="text">
                 +
               </button>
             </p>
             <button class="button search" type="submit">Найти</button>
             </p>
           </form>
-        </div>
       </section>
       <section class="map">
         <!-- здесь будет карта -->
       </section>
     </main>
     <footer class="main-footer">
-      <div class="wrapper">
         <p class="hashtag">#VISITSEDONA</p>
         <ul class="list-reset social">
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -148,7 +139,6 @@
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
         <p class="footer-copyright">website by html academy</p>
-      </div>
     </footer>
 </body>
 
