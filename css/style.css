@@ -47,16 +47,36 @@ a {
 
 .site-navigation {
   list-style: none;
+
+}
+
+
+
+.site-navigation a:nth-child(2) {
+	background-color:red;
 }
 
 .site-navigation a {
+  width: 25%;
   color: #000000;
 }
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .site-navigation a:active {
   color: #766357;
+}
+
+.left {
+text-align: justify;
+
+
+}
+
+.right {
+
+
 }
 
 .main {
@@ -239,6 +259,8 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   list-style: none;
+  width: 45px;
+  height: 45px;
 }
 
 .hashtag {
@@ -246,6 +268,26 @@ a {
   font-height: 26px;
   font-weight: bold;
 }
+
+.visually-hidden:not(:focus):not(:active),  
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 
 .inner-page {
   color: #000000;
@@ -293,6 +335,10 @@ a {
   font-size: 12px;
   font-height: 18px;
   font-weight: normal;
+}
+
+.table {
+	   border:0 none;
 }
 
 .filter-range {
@@ -537,15 +583,14 @@ a {
 
 .site-navigation {
   margin: 0;
-
+  min-height: 55px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 31px;
-  padding-top: 31px;
+
+ 
 }
 
 .main-header-logo {
@@ -645,6 +690,8 @@ a {
   width: 200px;
   margin-left: auto;
   margin-right: 100px;
+  padding-right: 50px;
+
 }
 
 .hashtag {
@@ -656,15 +703,25 @@ a {
 .list-reset.social {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
 }
+
 
 .social-button {
-  width: 148px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
   margin-right: 5px;
+
 }
 
-.filter {
+
+  .filter {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -713,3 +770,6 @@ a {
 .for-suction {
   margin-right: 25px;
 }
+
+
+

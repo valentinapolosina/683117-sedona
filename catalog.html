@@ -25,10 +25,11 @@
       </ul>
     </header>
     <main>
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="table">
             <legend class="staple">Инфраструктура:</legend>
             <ul class="list-reset">
               <li class="filter-option">
@@ -45,7 +46,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="table">
             <legend class="staple">Тип жилья:</legend>
             <ul class="list-reset">
               <li class="filter-option">
@@ -62,24 +63,26 @@
               </li>
             </ul>
           </fieldset>
-          <div class="filter-range">
-            <div class="filter-range-title">Стоимость в сутки (р):</div>
-            <div class="price-controls">
-              <label class="min-price">от
-                <input type="text" name="min-price" value="0">
-              </label>
-              <label class="max-price">до
-                <input type="text" name="max-price" value="3000">
-              </label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+          <fieldset class="table">
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000">
+                </label>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
-            <button class="button show" type="sumbit">показать</button>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="button show" type="sumbit">показать</button>
+          </fieldset>
         </form>
       </section>
       <section class="sorting">
