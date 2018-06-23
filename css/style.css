@@ -18,6 +18,24 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -37,12 +55,26 @@ a {
   background-image: url("../img/main-logo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
   background-color: #ffffff;
   width: 100%;
   min-height: 475px;
   background-size: cover;
 }
 
+.main-promo::before {
+ content: "";
+
+ background-image: url("../img/line.png");
+ background-repeat: no-repeat;
+ background-position: 0 0;
+ position: absolute;
+ width: 1200px;
+ height: 57px;
+ bottom: -1px;
+ left: 0;
+
+}
 
 
 .site-navigation {
@@ -50,17 +82,29 @@ a {
 
 }
 
+.site-navigation li {
+	width: 25%;
+}
 
 
-.site-navigation a:nth-child(2) {
-	background-color:red;
+.site-navigation {
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
-  width: 25%;
   color: #000000;
 }
 
+.left {
+  text-align: center;
+
+}
+
+.right {
+  text-align: center;
+
+}
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -68,16 +112,6 @@ a {
   color: #766357;
 }
 
-.left {
-text-align: justify;
-
-
-}
-
-.right {
-
-
-}
 
 .main {
   background-color: #ffffff;
@@ -87,14 +121,24 @@ text-align: justify;
   font-size: 21px;
   font-height: 26px;
   font-weight: bold;
-  margin-bottom: 35px;
+  width: 100px;
+
+
 }
 
 .reasons p {
   font-size: 14px;
   font-height: 26px;
   font-weight: normal;
-  margin-bottom: 40px;
+  margin: 35px;
+}
+
+.reasons {
+	text-align: center;
+	height: 220px;
+	margin-top: 65px;
+	margin-bottom: -55px;
+
 }
 
 .reason-with-picture h2 {
@@ -113,22 +157,26 @@ text-align: justify;
   background-color: #81b3d2;
   color: #ffffff;
   text-align: left;
-  min-height: 255px;
+  height: 255px;
 }
 
 
-
-.devil-bridge-picture,
-.sedona-picture {
-  text-align: right;
+.sedona-real-city {
+	text-align: center;
 }
 
+.devil-bridge-picture {
+	text-align: center;
+}
 
 .advice {
   background-color: #ffffff;
   color: #000000;
 }
 
+.housing {
+	background-image: url(../icon-1.svg);
+}
 
 .landmark {
   color: #000000;
@@ -268,26 +316,6 @@ text-align: justify;
   font-height: 26px;
   font-weight: bold;
 }
-
-.visually-hidden:not(:focus):not(:active),  
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-
 
 .inner-page {
   color: #000000;
@@ -599,6 +627,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   margin-right: -69px;
   right: 50%;
+  z-index: 1;
 }
 
 
@@ -615,6 +644,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   min-height: 255px;
+
 }
 
 .advice {
@@ -625,6 +655,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin-left: 75px;
   margin-right: 155px;
+  text-align: center;
 }
 
 .reason-with-picture.devil {
@@ -633,6 +664,7 @@ input[type="radio"].visually-hidden {
   min-height: 255px;
   justify-content: space-between;
   align-items: center;
+
 }
 
 
@@ -687,15 +719,24 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
   margin: 0;
-  width: 200px;
+  width: 33.22222%;
   margin-left: auto;
   margin-right: 100px;
   padding-right: 50px;
+  padding-left: 50px;
+  text-align: right;
+
+
+}
+
+
+.footer-copyright a {
+	display: inline-block;
 
 }
 
 .hashtag {
-  width: 138px;
+  width: 33.22222%;
   margin-right: 255px;
   margin-left: auto;
 }
@@ -704,7 +745,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 150px;
+  width: 33.22222%;
   margin: 0 auto;
   padding: 0;
 }
@@ -716,7 +757,8 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   width: 45px;
   height: 45px;
-  margin-right: 5px;
+  padding-left: -10px;
+
 
 }
 
