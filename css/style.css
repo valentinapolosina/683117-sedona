@@ -700,13 +700,13 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 576px;
-  min-height: 85px;
+    width: 576px;
+  height: 75px;
 }
 
 .button.search {
   width: 460px;
-  min-height: 55px;
+  height: 55px;
 }
 
 .main-footer {
@@ -718,36 +718,34 @@ input[type="radio"].visually-hidden {
 
 
 .footer-copyright {
+  display: flex;
+  justify-content: center;
   margin: 0;
   width: 33.22222%;
-  margin-left: auto;
-  margin-right: 100px;
   padding-right: 50px;
-  padding-left: 50px;
   text-align: right;
-
-
 }
 
-
 .footer-copyright a {
-	display: inline-block;
-
+display: inline-block;
 }
 
 .hashtag {
+	display: flex;
+	justify-content: center;
   width: 33.22222%;
-  margin-right: 255px;
-  margin-left: auto;
+
 }
 
 .list-reset.social {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-left: 15px;
   width: 33.22222%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  padding-left: -30px;
 }
 
 
@@ -757,8 +755,6 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   width: 45px;
   height: 45px;
-  padding-left: -10px;
-
 
 }
 
@@ -814,4 +810,31 @@ input[type="radio"].visually-hidden {
 }
 
 
+
+
+.appointment-item.date {
+	width: 340px;
+	margin: 0;
+  margin-bottom: 10px;
+  
+}
+
+.appointment-item.age {
+	width: 115px;
+	margin: 0;
+  margin-bottom: 10px;
+  
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment-item label {
+  display: block;
+    margin-bottom: 9px;
+  margin-left: 15px;
+}
 
