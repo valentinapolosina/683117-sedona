@@ -39,6 +39,11 @@ input[type="radio"].visually-hidden {
 .container {
   margin: 0 auto;
   width: 1200px;
+  position: relative;
+}
+
+.button {
+	border: none;
 }
 
 .main-header {
@@ -119,7 +124,7 @@ input[type="radio"].visually-hidden {
 
 .reasons b {
   font-size: 21px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: bold;
   width: 100px;
 
@@ -128,7 +133,7 @@ input[type="radio"].visually-hidden {
 
 .reasons p {
   font-size: 14px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: normal;
   margin: 35px;
 }
@@ -149,14 +154,14 @@ input[type="radio"].visually-hidden {
 
 .reason-with-pucture p {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: normal;
 }
 
 .reason-with-picture {
   background-color: #81b3d2;
   color: #ffffff;
-  text-align: left;
+  text-align: center;
   height: 255px;
 }
 
@@ -165,18 +170,58 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 }
 
+.sedona-picture {
+	padding: 0;
+	margin: 0;
+}
+
+.devil-bridge {
+  text-align: center;
+}
+
 .devil-bridge-picture {
-	text-align: center;
+	padding: 0;
+	margin: 0;  
 }
 
 .advice {
   background-color: #ffffff;
   color: #000000;
 }
+ .housing {
+ 	background-image: url(../img/icon-1.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 70px;
 
-.housing {
-	background-image: url(../icon-1.svg);
 }
+
+.food {
+	background-image: url(../img/icon-2.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 70px;
+
+}
+
+.souvenir {
+	background-image: url(../img/icon-3.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 70px;
+
+}
+
+
 
 .landmark {
   color: #000000;
@@ -185,7 +230,7 @@ input[type="radio"].visually-hidden {
 
 .landmark p {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
 }
 
 .landmark h2 {
@@ -193,6 +238,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: bold;
 }
+
 
 .interested {
   background-color: #ffffff;
@@ -219,7 +265,7 @@ input[type="radio"].visually-hidden {
 .button.link-search {
   font: inherit;
   font-size: 21px;
-  font-weight: 26px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
 
@@ -239,7 +285,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item input {
   font-size: 14px;
-  font-weight: 21px;
+  line-height: 21px;
   color: #000000;
 
   border: 2px solid #e5e5e5;
@@ -248,7 +294,7 @@ input[type="radio"].visually-hidden {
 .appointment-form {
   font-weight: bold;
   font-size: 14px;
-  font-height: 26px;
+  line-height: 26px;
 }
 
 
@@ -273,9 +319,11 @@ input[type="radio"].visually-hidden {
 .button.search {
   font: inherit;
   font-size: 14px;
-  font-weight: 21px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+    display: block;
+
 
   background-color: #81b3d2;
   color: #ffffff;
@@ -308,12 +356,12 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   list-style: none;
   width: 45px;
-  height: 45px;
+  min-height: 45px;
 }
 
 .hashtag {
   font-size: 21px;
-  font-height: 26px;
+  line-height: 26px;
   font-weight: bold;
 }
 
@@ -340,13 +388,13 @@ input[type="radio"].visually-hidden {
 
   font-size: 21px;
   font-weight: bold;
-  font-height: 26px;
+  line-height: 26px;
 }
 
 .filter-option {
   font-size: 14px;
   font-weight: normal;
-  font-height: 21px;
+  line-height: 21px;
 }
 
 .sorting {
@@ -356,12 +404,12 @@ input[type="radio"].visually-hidden {
 .search p {
   font-size: 21px;
   font-weight: bold;
-  font-height: 26px;
+  line-height: 26px;
 }
 
 .list-reset p {
   font-size: 12px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: normal;
 }
 
@@ -506,7 +554,7 @@ input[type="radio"].visually-hidden {
 .price {
   font-size: 14px;
   font-weight: normal;
-  font-height: 21px;
+  line-height: 21px;
 }
 
 .button.detail {
@@ -542,7 +590,7 @@ input[type="radio"].visually-hidden {
 .name-hotel {
   color: #000000;
   font-size: 21px;
-  font-weight: 26px;
+  line-height: 26px;
 }
 
 .name-hotel:hover,
@@ -556,13 +604,13 @@ input[type="radio"].visually-hidden {
 
 .button-hotels {
   font-size: 14px;
-  font-height: 21px;
+  line-height: 21px;
   font-weight: bold;
 }
 
 .rating {
   font-size: 14px;
-  font-height: 21px;
+ line-height: 21px;
   font-weight: normal;
 }
 
@@ -644,17 +692,26 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   min-height: 255px;
+  text-align: center;
 
 }
 
+.sedona-real-city {
+	text-align: center;
+	padding-left: 55px;
+}
+
+
+.devil-bridge {
+	text-align: center;
+	padding-right: 55px;
+}
 .advice {
   min-height: 255px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 75px;
-  margin-right: 155px;
+  justify-content: space-around;
   text-align: center;
 }
 
@@ -665,6 +722,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
 
+
 }
 
 
@@ -673,11 +731,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 60px;
-  padding-left: 75px;
-  padding-right: 75px;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .interested {
@@ -698,15 +753,16 @@ input[type="radio"].visually-hidden {
 
 .button.link-search {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-    width: 576px;
-  height: 75px;
+  margin: 0 auto;
+  width: 576px;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .button.search {
   width: 460px;
-  height: 55px;
+  min-height: 55px;
 }
 
 .main-footer {
@@ -714,38 +770,47 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   align-items: center; 
+  position: absolute;
+
 }
 
 
 .footer-copyright {
   display: flex;
-  justify-content: center;
-  margin: 0;
   width: 33.22222%;
-  padding-right: 50px;
-  text-align: right;
+  flex-direction: row;
+  align-items: center;
+
 }
 
 .footer-copyright a {
 display: inline-block;
+margin-left: 80px;
+position: absolute;
+
 }
+
+
+
 
 .hashtag {
 	display: flex;
-	justify-content: center;
   width: 33.22222%;
+  justify-content: flex-start;
+  margin-left: 125px;
+  margin-right: 250px;
+
 
 }
 
-.list-reset.social {
+.social.list-reset {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  padding-left: 15px;
   width: 33.22222%;
   margin: 0;
   padding: 0;
-  padding-left: -30px;
+  margin-right: 225px;
+
 }
 
 
@@ -755,6 +820,7 @@ display: inline-block;
   justify-content: center;
   width: 45px;
   height: 45px;
+  margin-right: 5px;
 
 }
 
@@ -812,29 +878,15 @@ display: inline-block;
 
 
 
-.appointment-item.date {
-	width: 340px;
-	margin: 0;
-  margin-bottom: 10px;
-  
-}
-
-.appointment-item.age {
-	width: 115px;
-	margin: 0;
-  margin-bottom: 10px;
-  
-}
-
 .appointment-form {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.appointment-item label {
-  display: block;
-    margin-bottom: 9px;
-  margin-left: 15px;
+.appointment-item{
+	width: 455px; 
 }
 
