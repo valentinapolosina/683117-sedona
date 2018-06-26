@@ -879,29 +879,27 @@ position: absolute;
 
 
 .appointment-form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
+display: block;
+width: 575px;
+padding-right: 55px;
+padding-left: 55px;
 }
 
 .appointment-item{
 	width: 455px; 
 }
 
-.age {
+.appointment-item.number {
+  width: 215px;
+
+}
+
+.number {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 }
 
-.arrival {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 
-}
 
