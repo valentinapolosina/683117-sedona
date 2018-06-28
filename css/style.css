@@ -298,7 +298,63 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 
+.appointment-form {
+display: block;
+width: 575px;
+box-sizing: border-box;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 40px;
+padding-bottom: 40px;
+position: absolute;
+top: 235px;
+background-color: white;
+}
 
+.appointment-item{
+	width: 455px; 
+	display: flex;
+  justify-content: space-around;
+}
+
+.appointment-item.number {
+  width: 50%;
+
+}
+
+.appointment-item.date {
+	width: 100%
+}
+
+.appointment-item.date input {
+	padding-right: 160px;
+	padding-top: 7px;
+	padding-bottom: 7px;  
+}
+
+.appointment-item.number {
+	width: 50%;
+}
+
+.appointment-item.number input {
+	width: 40px;
+  text-align: center;
+}
+
+.appointment-item.number button {
+	width: 35px;	
+	height: 24px;
+}
+
+.appointment-item.number label {
+	padding-right: 20px;
+}
+.number {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
 
 .button.plus-minus {
   background-color: #f2f2f2;
@@ -309,6 +365,7 @@ input[type="radio"].visually-hidden {
 .button.plus-minus:hover,
 .button.plus-minus:focus {
   color: #000000;
+   border: none;
 }
 
 .button.plus-minus:active {
@@ -316,6 +373,22 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.calendar-icon {
+position: absolute;
+padding-left: 410px;
+padding-top: 5px;
+fill: #a9a9a9;
+}
+
+
+.calendar-icon:hover, 
+.calendar-icon:focus {
+	fill: #000000;
+}
+
+.calendar-icon:active {
+	fill:#81b3d2;
+}
 
 .button.search {
   font: inherit;
@@ -609,7 +682,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
-.rating {
+.rating-and-star   {
   font-size: 14px;
  line-height: 21px;
   font-weight: normal;
@@ -643,34 +716,51 @@ input[type="radio"].visually-hidden {
   border-top: 13px solid #81b3d2;
 }
 
-.triangle-up:disabled,
 .triangle-down:disalbled {
 	cursor: default;
   opacity: 0.5;
  border-top: 13px solid #000000;
 }
 
-.triangle-up:hover,
 .triangle-down:hover {
   border-top: 13px solid #231f20;
 }
 
-.triangle-up:focus,
 .triangle-down:focus {
 	border-top: 13px solid #231f20;
 }
 
-.triangle-up:active,
 .triangle-down:active {
 	border-top: 13px solid #81b3d2;
 }
 
-
-.rating {
-	background-image: url(../img/star.svg), url(../img/star.svg);
-	background-repeat: no-repeat, no-repeat;
-	background-position: center, top;
+.triangle-up:disalbled {
+	cursor: default;
+  opacity: 0.5;
+ border-bottom: 13px solid #000000;
 }
+
+.triangle-up:hover {
+  border-bottom: 13px solid #231f20;
+}
+
+.triangle-up:focus {
+	border-bottom: 13px solid #231f20;
+}
+
+.triangle-up:active {
+	border-bottom: 13px solid #81b3d2;
+}
+
+
+.triangle {
+	display: flex;
+	width: 40px;
+	height: 10px;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 
 
 
@@ -898,12 +988,16 @@ position: absolute;
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
+
+  width: 25px;
+  height: 25px;
+  
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+    top: 0px;
   left: -35px;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border: 1.5px solid #ffffff;
-  border-radius: 2px;
 
 }
 
@@ -912,14 +1006,14 @@ position: absolute;
 
   position: absolute;
 
-  width: 12px;
-  height: 12px;
+  width: 25px;
+  height: 25px;
   
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
-    top: 4px;
+    top: 0px;
   left: -35px;
 }
 
@@ -951,7 +1045,7 @@ position: absolute;
 }
 
 .hotel-wrapper {
-  width: calc(100% - 250px);
+  width: calc( 100% - 300px);
 }
 
 .list-reset.sort-type {
@@ -972,71 +1066,9 @@ position: absolute;
 
 
 
-.appointment-form {
-display: block;
-width: 575px;
-box-sizing: border-box;
-padding-left: 50px;
-padding-right: 50px;
-padding-top: 40px;
-padding-bottom: 40px;
-position: absolute;
-top: 235px;
-background-color: white;
-}
-
-.appointment-item{
-	width: 455px; 
-	display: flex;
-  justify-content: space-around;
-}
-
-.appointment-item.number {
-  width: 50%;
-
-}
-
-.appointment-item.date {
-	width: 100%
-}
-
-.appointment-item.date input {
-	padding-right: 160px;
-	padding-top: 4px;
-	padding-bottom: 4px;  
-}
-
-.appointment-item.number {
-	width: 50%;
-}
-
-.appointment-item.number input {
-	width: 40px;
-  text-align: center;
-}
-
-.appointment-item.number button {
-	width: 35px;	
-	height: 24px;
-}
-
-.appointment-item.number label {
-	padding-right: 20px;
-}
-.number {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
 
 
-.calendar-icon {
-	background-image: url("../img/calendar.svg");
-  background-position: 300px center;
-  background-repeat: no-repeat;
-  background-color: #cacaca;
-}
+
 
 .list {
 	display: flex;
@@ -1058,7 +1090,6 @@ text-align: center;
 	text-align: center;
 
 }
-
 .button-hotels {
 	margin-top: 8px;
 }
@@ -1082,6 +1113,9 @@ text-align: center;
 
 .catalog {
 	border-bottom: 1px solid #cacaca;
-    
+    }
 
+
+.rating {
+	background-color: #f2f2f2;
 }
