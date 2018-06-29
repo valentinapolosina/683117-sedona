@@ -40,6 +40,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   width: 1200px;
   position: relative;
+  box-shadow: 0px 5px 15px 0px rgba(1, 1, 1, 0.2); 
 }
 
 .button {
@@ -301,6 +302,7 @@ input[type="radio"].visually-hidden {
 .appointment-form {
 display: block;
 width: 575px;
+min-height: 395px;
 box-sizing: border-box;
 padding-left: 50px;
 padding-right: 50px;
@@ -424,6 +426,10 @@ fill: #a9a9a9;
   background-size: cover;
 }
 
+.main-footer {
+	background-color: white;
+	width: 1200px;
+}
 
 .social-button {
   background-color: #81b3d2;
@@ -475,10 +481,17 @@ fill: #a9a9a9;
   list-style: none;
 }
 
-.search p {
+.search-hotel {
+	width: 120px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+
 }
 
 .list-reset p {
@@ -622,7 +635,6 @@ fill: #a9a9a9;
 .button.show:hover {
   background-color: #ffffff;
   color: #000000;
-  border: none;
 }
 
 .price {
@@ -660,6 +672,18 @@ fill: #a9a9a9;
   background-color: #604e43;
 }
 
+.hotel-name {
+	color: #000000;
+}
+
+.hotel-name:focus,
+.hotel-name:hover {
+	color: #81b3d2;
+}
+
+.hotel-name:active {
+	opacity: 
+}
 
 .name-hotel {
   color: #000000;
@@ -720,6 +744,7 @@ fill: #a9a9a9;
 	cursor: default;
   opacity: 0.5;
  border-top: 13px solid #000000;
+ width: 40px;
 }
 
 .triangle-down:hover {
@@ -758,7 +783,9 @@ fill: #a9a9a9;
 	width: 40px;
 	height: 10px;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: 75px;
 }
 
 
@@ -1020,7 +1047,8 @@ position: absolute;
 .sorting {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
   margin-right: 30px;
   width: 1200px;
   min-height: 85px;
@@ -1074,6 +1102,7 @@ position: absolute;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: calc(100% - 160px );
 }
 
 .button.detail {
@@ -1113,9 +1142,18 @@ text-align: center;
 
 .catalog {
 	border-bottom: 1px solid #cacaca;
+	width: 1200px;
     }
 
 
 .rating {
 	background-color: #f2f2f2;
+	width: 100px;
 }
+.stars {
+	display: flex;
+	flex-direction: row;
+  justify-content: flex-start;
+  width: 120px;
+}
+
