@@ -61,13 +61,14 @@ input[type="radio"].visually-hidden {
 
 .main-promo {
   background-image: url("../img/main-logo.jpg");
-  background-position: top center;
+  background-position: center top;
   background-repeat: no-repeat;
   position: relative;
   background-color: #ffffff;
   width: 100%;
-  min-height: 475px;
+  min-height: 510px;
   background-size: cover;
+
 }
 
 .main-promo::before {
@@ -93,22 +94,36 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   margin: 0;
-  min-height: 55px;
+  min-height: 53px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 1200px;
 
+}
+.site-navigation li {
+	width: 20%;
 }
 
 
-.left {
+.left-1 {
 	text-align: center;
+
 }
 
-.right {
-	text-align: center;
+.left-2 {
+	text-align: left;
+	margin-right: 5px;
+}
+
+.right-1 {
+	text-align: right;
+}
+
+.right-2 {
+  text-align: center;
 }
 
 .main-header-logo {
@@ -142,9 +157,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-.site-navigation li {
-	width: 25%;
-}
 
 
 .site-navigation {
@@ -186,13 +198,13 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: normal;
   color: #333333;
-  margin: 35px;
+  margin: 30px;
 }
 
 .reasons {
 	text-align: center;
-	height: 220px;
-	margin-top: 65px;
+	height: 213px;
+	margin-top: 58px;
 	margin-bottom: -55px;
 
 }
@@ -213,7 +225,7 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
-  height: 250px;
+  height: 255px;
   box-sizing: border-box;
 }
 
@@ -223,7 +235,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 250px;
+  min-height: 255px;
   text-align: center;
 
 }
@@ -236,17 +248,21 @@ min-height: 250px;
 
 .sedona-real-city {
 	text-align: center;
-	padding-left: 55px;
+	padding-left: 66px;
+	margin-bottom: 20px;
 }
 
+.sedona-real-city h2 {
+}
 
-.sedona-real-city {
-	text-align: center;
+.sedona-real-city p {
+	padding-top: 10px;
 }
 
 .sedona-picture {
 	padding: 0;
 	margin: 0;
+	padding-top: 5px;
 }
 
 .devil-bridge {
@@ -255,7 +271,9 @@ min-height: 250px;
 
 .devil-bridge-picture {
 	padding: 0;
-	margin: 0;  
+	margin: 0; 
+	padding-top: 5px;
+
 }
 
 .devil-bridge h2 {
@@ -291,6 +309,14 @@ min-height: 250px;
 	color: #333333;
 }
 
+.advice {
+  min-height: 330px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
 
 
  .housing {
@@ -305,7 +331,7 @@ min-height: 250px;
 }
 
 .food {
-	background-image: url(../img/icon-2.svg);
+	background-image: url(../img/icon-3.svg);
   background-position: top;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -316,7 +342,7 @@ min-height: 250px;
 }
 
 .souvenir {
-	background-image: url(../img/icon-3.svg);
+	background-image: url(../img/icon-2.svg);
   background-position: top;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -1232,14 +1258,7 @@ text-align: center;
 	text-align: center;
 	padding-right: 55px;
 }
-.advice {
-  min-height: 255px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-}
+
 
 .reason-with-picture.devil {
   display: flex;
