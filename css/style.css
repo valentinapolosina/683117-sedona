@@ -86,7 +86,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   position: relative;
-  min-height: 56px;
+  min-height: 54px;
 }
 
 
@@ -213,7 +213,30 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
-  height: 255px;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+
+.reason-with-picture.sedona {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 250px;
+  text-align: center;
+
+}
+
+.reason-with-picture.devil {
+min-height: 250px;
+
+}
+
+
+.sedona-real-city {
+	text-align: center;
+	padding-left: 55px;
 }
 
 
@@ -245,7 +268,7 @@ input[type="radio"].visually-hidden {
 	font-size: 12px;
 	line-height: 21px;
 	font-weight: normal;
-	color: #333333;
+	color: #ffffff;
 }
 
 
@@ -456,9 +479,12 @@ bottom: 0px;
 .appointment-item.date input {
 	width: 335px;
 	height: 35px;
-		padding-left: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
 
 }
+
+.appointment-item.number label {	}
 
 .appointment-item.number {
 	width: 50%;
@@ -468,6 +494,7 @@ bottom: 0px;
 	width: 40px;
 	height: 38px;
   text-align: center;
+  box-sizing: border-box;
 
 }
 
@@ -475,10 +502,15 @@ bottom: 0px;
 	width: 40px;	
 	height: 40px;
 
+
 }
 
-.appointment-item.number label {
-	padding-right: 27px;
+.appointment-item.number.adults label {
+	margin-right: 20px;
+}
+
+.appointment-item.number.children label {
+	margin-right: 25px;
 }
 
 
@@ -580,6 +612,28 @@ bottom: 0px;
   min-height: 45px;
 }
 
+
+.social.list-reset {
+  display: flex;
+  flex-direction: row;
+  width: 33.22222%;
+  margin: 0;
+  padding: 0;
+  margin-right: 225px;
+
+}
+
+
+.social-button {
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+
+}
+
 .social-button:hover,
 .social-button:focus {
 	background-color: #669ec0;
@@ -589,6 +643,11 @@ bottom: 0px;
 .social-button svg:active {
 	background-color: #5496bd;
 	opacity: 0.3;
+}
+
+.social-button:active {
+	background-color: #5496bd;
+	color: rgba(255,255,255,0.3);
 }
 
 .footer-copyright a:focus,
@@ -1167,20 +1226,6 @@ text-align: center;
 
 /* немного сетки */
 
-.reason-with-picture.sedona {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 255px;
-  text-align: center;
-
-}
-
-.sedona-real-city {
-	text-align: center;
-	padding-left: 55px;
-}
 
 
 .devil-bridge {
@@ -1286,26 +1331,6 @@ position: absolute;
 
 }
 
-.social.list-reset {
-  display: flex;
-  flex-direction: row;
-  width: 33.22222%;
-  margin: 0;
-  padding: 0;
-  margin-right: 225px;
-
-}
-
-
-.social-button {
-	display: flex;
-	align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  margin-right: 5px;
-
-}
 
 
 
