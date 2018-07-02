@@ -100,9 +100,16 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: space-between;
 
- 
 }
 
+
+.left {
+	text-align: center;
+}
+
+.right {
+	text-align: center;
+}
 
 .main-header-logo {
   width: 138px;
