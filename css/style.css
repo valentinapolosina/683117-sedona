@@ -303,7 +303,7 @@ min-height: 250px;
 
 
 .advice p {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
 	color: #333333;
@@ -316,6 +316,7 @@ min-height: 250px;
   align-items: center;
   justify-content: space-around;
   text-align: center;
+
 }
 
 
@@ -326,7 +327,8 @@ min-height: 250px;
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 70px;
+  padding-top: 100px;
+    width: 400px;
 
 }
 
@@ -337,7 +339,8 @@ min-height: 250px;
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 70px;
+  padding-top: 100px;
+  width: 400px;
 
 }
 
@@ -348,7 +351,8 @@ min-height: 250px;
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 70px;
+  padding-top: 100px;
+  width: 400px;
 
 }
 
@@ -484,7 +488,7 @@ background-color: white;
 }
 
 .appointment-item.number {
-  width: 50%;
+  width: 455px;
 
 }
 
@@ -492,8 +496,6 @@ background-color: white;
   position: relative;
 	width: 100%
 }
-
-
 
 .calendar-icon {
 position: absolute;
@@ -510,15 +512,13 @@ bottom: 0px;
 
 }
 
-.appointment-item.number label {	}
-
-.appointment-item.number {
-	width: 50%;
-}
+.appointment-item.number label {
+  width: 75px;
+	}
 
 .appointment-item.number input {
 	width: 40px;
-	height: 38px;
+	height: 40px;
   text-align: center;
   box-sizing: border-box;
 
@@ -528,23 +528,46 @@ bottom: 0px;
 	width: 40px;	
 	height: 40px;
 
-
 }
 
-.appointment-item.number.adults label {
-	margin-right: 20px;
+
+.label-children {
+	margin-right: 10px;
 }
 
-.appointment-item.number.children label {
-	margin-right: 25px;
+.label-adults {
+  margin-right: 30px;
 }
 
+
+
+
+
+.appointment-item.number.adults {
+	display: flex;
+	flex-direction: row;
+	width: 229px;
+	justify-content: center;
+	align-items: center; 
+	margin-left: 22px;
+}
+
+
+.appointment-item.number.children {
+	display: flex;
+	flex-direction: row;
+	width: 179px;
+	justify-content: space-between;
+	align-items: center; 
+	margin-right: 12px;
+}
 
 .number {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	width: 100%;
 
 }
 
@@ -630,13 +653,7 @@ bottom: 0px;
   bottom: 1px;
 }
 
-.social-button {
-  background-color: #81b3d2;
-  color: white;
-  list-style: none;
-  width: 45px;
-  min-height: 45px;
-}
+
 
 
 .social.list-reset {
@@ -649,6 +666,10 @@ bottom: 0px;
 
 }
 
+.social.list-reset li {
+	margin-right: 5px;
+}
+
 
 .social-button {
 	display: flex;
@@ -656,7 +677,7 @@ bottom: 0px;
   justify-content: center;
   width: 45px;
   height: 45px;
-  margin-right: 5px;
+  background-color: #81b3d2;
 
 }
 
@@ -666,7 +687,7 @@ bottom: 0px;
 	fill: #ffffff;
 }
 
-.social-button svg:active {
+.social-button:active svg {
 	background-color: #5496bd;
 	opacity: 0.3;
 }
@@ -817,8 +838,7 @@ margin: 0;
 	   border:0 none;
 }
 
-
-  .filter {
+.filter {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -850,7 +870,7 @@ margin: 0;
 
 .filter-option {
   margin-bottom: 25px;	
-	padding-left: 35px;
+	padding-left: 0px;
 }
 
 
@@ -1413,14 +1433,17 @@ position: absolute;
 
 .current {
 	color: #81b3d2;
+	cursor: pointer;
 }
 
 .nocurrent {
 	border-bottom:1px dotted #81b3d2;
+	cursor: pointer;
 }
 
 .for-suction:active {
 	color: #262626;
+	border:none;
 }
 
 
