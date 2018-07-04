@@ -87,44 +87,51 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   position: relative;
-  min-height: 54px;
+  height: 55px;
+
+
+
 }
 
+.site-navigation li {
+	line-height: 26px;
+	font-weight: bold;
+}
 
 
 .site-navigation {
-  margin: 0;
-  min-height: 53px;
+	  height: 18px;
+
+	background-color: #ffffff;
+	list-style: none;
+	margin: 0;
+  padding: 17px 72px 18px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 1200px;
-
-}
-.site-navigation li {
-	width: 20%;
-}
-
-
-.left-1 {
-	text-align: center;
+  justify-content: flex-start;
 
 }
 
-.left-2 {
-	text-align: left;
-	margin-right: 5px;
+.site-navigation li:nth-child(4n+3) {
+width: 283px;
+padding-right: 4px;
+text-align: right;
 }
 
-.right-1 {
+
+.site-navigation li:nth-child(4n+1) {
+	width: 241px;
+}
+
+.site-navigation li:nth-child(4n+4) {
+	width: 241px;
 	text-align: right;
 }
 
-.right-2 {
-  text-align: center;
+.site-navigation li:nth-child(4n+2) {
+	width: 287px;
 }
+
 
 .main-header-logo {
   width: 138px;
@@ -145,24 +152,7 @@ input[type="radio"].visually-hidden {
 
 
 
-.site-navigation {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	background-color: #ffffff;
-}
 
-.site-navigation {
-  list-style: none;
-
-}
-
-
-
-.site-navigation {
-  margin: 0;
-  padding: 0;
-}
 
 .site-navigation a {
   color: #000000;
@@ -249,7 +239,7 @@ min-height: 250px;
 .sedona-real-city {
 	text-align: center;
 	padding-left: 66px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .sedona-real-city h2 {
@@ -266,14 +256,13 @@ min-height: 250px;
 	overflow: hidden;
 }
 
-.devil-bridge {
-  text-align: center;
-}
 
 .devil-bridge-picture {
 	padding: 0;
 	margin: 0; 
-	padding-top: 5px;
+	overflow: hidden;
+		height: 255px;
+
 
 }
 
@@ -284,7 +273,7 @@ min-height: 250px;
 }
 
 .devil-bridge p {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
 	color: #ffffff;
@@ -300,6 +289,7 @@ min-height: 250px;
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  margin-top: 50px;
 }
 
 
@@ -308,6 +298,7 @@ min-height: 250px;
 	line-height: 21px;
 	font-weight: normal;
 	color: #333333;
+	margin-top: 25px;
 }
 
 .advice {
@@ -329,7 +320,7 @@ min-height: 250px;
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 50px;
     width: 400px;
 
 }
@@ -341,7 +332,7 @@ min-height: 250px;
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 400px;
 
 }
@@ -353,7 +344,7 @@ min-height: 250px;
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 100px;
+  padding-top: 50px;
   width: 400px;
 
 }
@@ -378,6 +369,53 @@ min-height: 250px;
   font-weight: bold;
 }
 
+.devil-bridge {
+	text-align: center;
+	padding-right: 45px;
+	margin-bottom: 20px;
+}
+
+.devil-bridge p {
+		padding-top: 10px;
+}
+
+.devil-bridge h2 {
+	padding-top: 5px;
+}
+
+.reason-with-picture.devil {
+  display: flex;
+  flex-direction: row;
+  min-height: 255px;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+
+.landmark {
+  min-height: 255px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.landmark h2 {
+	margin-bottom: 20px;
+}
+
+.landmark p {
+	margin-bottom: 25px;
+}
+
+.road {
+	padding-left: 23px;
+}
+
 
 .interested {
   background-color: #ffffff;
@@ -390,6 +428,9 @@ min-height: 250px;
   font-weight: bold;
 
   color: #000000;
+
+padding-top: 30px;
+margin-bottom: 10px;
 }
 
 .interested p {
@@ -400,6 +441,15 @@ min-height: 250px;
   color: #000000;
 }
 
+.interested {
+  display: flex;
+  flex-direction: column;
+  width: 576px;
+  min-height: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
 
 .button.link-search {
   font: inherit;
@@ -408,9 +458,11 @@ min-height: 250px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-
   background-color: #766357;
   color: #ffffff;
+  position: absolute;
+  height: 85px;
+  top: 28px;
 }
 
 .button.link-search:active {
@@ -432,7 +484,7 @@ min-height: 250px;
   border: none;
   height: 40px;
   outline: none;
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
@@ -445,7 +497,7 @@ min-height: 250px;
   border: none;
   height: 40px;
   outline: none;
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
@@ -519,7 +571,7 @@ padding-right: 50px;
 padding-top: 40px;
 padding-bottom: 40px;
 position: absolute;
-top: 235px;
+top: 290px;
 background-color: white;
 }
 
@@ -1289,41 +1341,7 @@ text-align: center;
 
 
 
-.devil-bridge {
-	text-align: center;
-	padding-right: 55px;
-}
 
-
-.reason-with-picture.devil {
-  display: flex;
-  flex-direction: row;
-  min-height: 255px;
-  justify-content: space-between;
-  align-items: center;
-
-
-}
-
-
-.landmark {
-  min-height: 255px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.interested {
-  display: flex;
-  flex-direction: column;
-  width: 576px;
-  min-height: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
 
 .button.link-search {
   position: relative;
