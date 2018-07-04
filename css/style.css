@@ -262,7 +262,8 @@ min-height: 250px;
 .sedona-picture {
 	padding: 0;
 	margin: 0;
-	padding-top: 5px;
+	height: 255px;
+	overflow: hidden;
 }
 
 .devil-bridge {
@@ -316,13 +317,14 @@ min-height: 250px;
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  box-sizing: border-box;
 
 }
 
 
  .housing {
  	background-image: url(../img/icon-1.svg);
-  background-position: top;
+  background-position: top ;
   background-repeat: no-repeat;
   background-color: #ffffff;
   position: relative;
@@ -430,7 +432,37 @@ min-height: 250px;
   border: none;
   height: 40px;
   outline: none;
+    cursor: pointer;
 
+}
+
+.input-wrapper {
+	font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  height: 40px;
+  outline: none;
+    cursor: pointer;
+
+}
+
+.input-wrapper:hover {
+	background-color: #ebebeb;
+}
+
+.input-wrapper:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.input-wrapper::placeholder {
+	color: black;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
 }
 
 .appointment-item input:hover {
@@ -459,11 +491,22 @@ min-height: 250px;
 
 }
 
-
 .appointment-form {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+}
+
+.appointment-item.date {
+  position: relative;
+	width: 455px;
+}
+
+.calendar-icon {
+position: absolute;
+fill: #a9a9a9;
+right: 10px;
+bottom: 0px;
 }
 
 .appointment-form {
@@ -480,94 +523,64 @@ top: 235px;
 background-color: white;
 }
 
+
 .appointment-item {
 	width: 455px; 
 	display: flex;
-  justify-content: space-around;
+	flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-.appointment-item.number {
-  width: 455px;
-
-}
-
-.appointment-item.date {
-  position: relative;
-	width: 100%
-}
-
-.calendar-icon {
-position: absolute;
-fill: #a9a9a9;
-right: 20px;
-bottom: 0px;
-}
-
-.appointment-item.date input {
-	width: 335px;
-	height: 35px;
-	padding-left: 10px;
-	box-sizing: border-box;
-
-}
-
-.appointment-item.number label {
-  width: 75px;
-	}
-
-.appointment-item.number input {
+.input-wrapper {
 	width: 40px;
 	height: 40px;
-  text-align: center;
+	text-align: center;
   box-sizing: border-box;
-
 }
 
-.appointment-item.number button {
-	width: 40px;	
-	height: 40px;
-
-}
-
-
-.label-children {
-	margin-right: 10px;
-}
-
-.label-adults {
-  margin-right: 30px;
-}
-
-
-
-
-
-.appointment-item.number.adults {
-	display: flex;
-	flex-direction: row;
-	width: 229px;
-	justify-content: center;
-	align-items: center; 
-	margin-left: 22px;
-}
-
-
-.appointment-item.number.children {
-	display: flex;
-	flex-direction: row;
-	width: 179px;
-	justify-content: space-between;
-	align-items: center; 
-	margin-right: 12px;
-}
 
 .number {
 	display: flex;
 	flex-direction: row;
+	width: 455px;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+
+.adults {
+	width: 229px;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+}
+
+
+.children {
+	width: 179px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.button-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 115px;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.appointment-item.date input {
+	width: 330px;
+	height: 35px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	  cursor: pointer;
 
 }
 
@@ -579,6 +592,8 @@ bottom: 0px;
 
   font-size: 25px;
   font-weight: bold;
+  height: 40px;
+  width: 40px;
 
   outline: none;
 
