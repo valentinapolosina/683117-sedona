@@ -461,7 +461,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
-  height: 40px;
+  height: 38px;
   outline: none;
   cursor: pointer;
   margin-bottom: 15px;
@@ -521,7 +521,7 @@ input[type="radio"].visually-hidden {
 .appointment-item.date {
   position: relative;
   width: 455px;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .calendar-icon {
@@ -549,9 +549,8 @@ input[type="radio"].visually-hidden {
 .number {
   display: flex;
   flex-direction: row;
-  width: 455px;
+  width: 451px;
   justify-content: space-between;
-  padding-left: 2px;
 }
 
 .adults {
@@ -560,16 +559,16 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 8px;
-  margin-right: 5px;
+  margin-bottom: 16px;
+  margin-right: 4px;
 }
 
 .children {
   width: 179px;
   padding-left: 50px;
   box-sizing: border-box;
-  margin-top: 10px;
-  margin-right: 8px;
+  margin-bottom: 16px;
+  margin-right: 40px;
 }
 
 .button-wrapper {
@@ -578,8 +577,9 @@ input[type="radio"].visually-hidden {
   width: 115px;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 17px;
-}
+  margin-left: 26px;
+  margin-top: 2px;
+  }
 
 .appointment-item.date input {
   width: 343px;
@@ -600,6 +600,7 @@ input[type="radio"].visually-hidden {
   height: 38px;
   width: 38px;
   outline: none;
+  margin-bottom: 15px;
 }
 
 .button.plus-minus:hover,
@@ -631,7 +632,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
   display: block;
-  margin-top: 36px;
+  margin-top: 24px;
   width: 460px;
   min-height: 58px;
   background-color: #81b3d2;
@@ -916,7 +917,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: bold;
   line-height: 26px;
-  padding-right: 33px;
+  padding-right: 31px;
 }
 
 .staple-wrapper {
