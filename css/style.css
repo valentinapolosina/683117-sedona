@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -161,14 +161,17 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   color: #333333;
   padding-top: 16px;
-  padding-right: 7px;
 }
 
 .reasons {
   text-align: center;
   height: 213px;
   padding-top: 58px;
-  padding-left: 5px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: 330px;
+  margin-right: 330px;
+  width: 540px;
   box-sizing: border-box;
 }
 
@@ -176,6 +179,10 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  width: 141px;
+  padding-left: 71px;
+  padding-top: 3px;
+  padding-right: 71px;
 }
 
 .reason-with-pucture p {
@@ -208,11 +215,15 @@ input[type="radio"].visually-hidden {
 .sedona-real-city {
   text-align: center;
   padding-left: 59px;
+  padding-right: 59px;
+  width: 400px;
+  box-sizing: border-box;
   margin-bottom: 18px;
 }
 
 .sedona-real-city p {
-  padding-top: 7px;
+  padding-top: 9px;
+  width: 285px;
 }
 
 .sedona-picture {
@@ -220,6 +231,11 @@ input[type="radio"].visually-hidden {
   margin: 0;
   height: 257px;
   overflow: hidden;
+}
+
+.sedona-picture figure {
+	margin: 0;
+	padding: 0;
 }
 
 .sedona-picture img {
@@ -263,6 +279,9 @@ input[type="radio"].visually-hidden {
   font-weight: normal;
   color: #333333;
   margin-top: 25px;
+  width: 290px;
+  padding-left: 53px;
+  padding-right: 53px;
 }
 
 .advice {
@@ -277,6 +296,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   padding-bottom: 8px;
   padding-left: 2px;
+  text-align: center;
 }
 
 .housing {
@@ -308,8 +328,10 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   position: relative;
   box-sizing: border-box;
-  padding-top: 50px;
+  padding-top: 53px;
   width: 400px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .landmark {
@@ -332,16 +354,19 @@ input[type="radio"].visually-hidden {
 
 .devil-bridge {
   text-align: center;
+  margin-bottom: 19px;
+  padding-left: 45px;
   padding-right: 45px;
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 400px;
 }
 
 .devil-bridge p {
-  padding-top: 10px;
-}
+  padding-top: 7px;
+  width: 311px;}
 
 .devil-bridge h2 {
-  padding-top: 5px;
+  width: 175px;
 }
 
 .reason-with-picture.devil {
@@ -357,21 +382,45 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  padding-left: 25px;
+  box-sizing: border-box;
 }
 
 .landmark h2 {
+  width: 120px;
   margin-bottom: 20px;
 }
 
 .landmark p {
-  margin-bottom: 25px;
+  width: 260px;
+  padding-bottom: 1;
+  margin-top: 0px;
+  margin-bottom: 24px;
 }
 
 .road {
-  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  display: flex;
+}
+
+.area {
+	align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  display: flex;
+}
+
+.tourist {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  display: flex;
 }
 
 .interested {
@@ -683,12 +732,11 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright {
   display: flex;
-  width: 33.22222%;
+  width: 32.33333%;
   flex-direction: row;
+  justify-content: center;
+  margin-right: 90px;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 155px;
-  margin-bottom: 10px;
 }
 
 .footer-copyright a {
@@ -696,24 +744,24 @@ input[type="radio"].visually-hidden {
   margin-left: 80px;
   position: absolute;
   margin-top: 2px;
-  padding-left: 2px;
+  padding-left: 45px;
 }
 
 .hashtag {
   display: flex;
-  width: 33.22222%;
-  justify-content: flex-start;
-  margin-left: 133px;
-  margin-right: 250px;
+  width: 32.33333%;
+  justify-content: center;
+  margin-left: 30px;
 }
 
 .social.list-reset {
   display: flex;
   flex-direction: row;
-  width: 33.22222%;
+  justify-content: center;
+  width: 32.33333%;
   margin: 0;
   padding: 0;
-  margin-right: 225px;
+  margin-left: 64px;
 }
 
 .social.list-reset li {
@@ -953,6 +1001,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   top: 0px;
   left: -40px;
+  padding-right: 20px; 
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -965,6 +1014,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   top: 0px;
   left: -40px;
+  padding-right: 20px;
 }
 
 .filter-input-checkbox:disabled {
@@ -1327,7 +1377,6 @@ input[type="radio"].visually-hidden {
 
 .for-sorting {
   margin-right: 38px;
-  margin-top: 3px;
   margin-left: 3px;
 }
 
@@ -1335,7 +1384,7 @@ input[type="radio"].visually-hidden {
   margin-right: 30px;
   color: #e7e7e7;
   margin-top: 3px;
-  margin-left: 3px;
+  margin-left: 2px;
 }
 
 .for-suction:hover,
@@ -1363,6 +1412,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   justify-content: space-between;
   width: calc(100% - 160px);
+  margin-top: 2px;
 }
 
 .list-reset.sort-type ul {
