@@ -446,7 +446,6 @@ input[type="radio"].visually-hidden {
 }
 
 .landmark p {
-  width: 260px;
   padding-bottom: 1;
   margin-top: 0px;
   margin-bottom: 24px;
@@ -467,7 +466,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 0px;
+  padding: 32px 50px;
   box-sizing: border-box;
 }
 
@@ -486,7 +485,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 0px;
+  padding: 32px 65px;
   box-sizing: border-box;
 }
 
@@ -505,7 +504,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 0px;
+  padding: 32px 55px;
   box-sizing: border-box;
 }
 
