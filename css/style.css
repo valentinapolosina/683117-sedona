@@ -468,6 +468,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   padding: 32px 0px;
+  box-sizing: border-box;
 }
 
 .area {
@@ -486,6 +487,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   padding: 32px 0px;
+  box-sizing: border-box;
 }
 
 .tourist {
@@ -503,6 +505,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 32px 0px;
+  box-sizing: border-box;
 }
 
 .interested {
