@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: bold;
   padding-left: 71px;
-  padding-top: 3px;
+  padding-top: 6px;
   padding-right: 71px;
 }
 
@@ -248,7 +248,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sedona-real-city p {
-  padding-top: 9px;
+  padding-top: 6px;
   width: 285px;
 }
 
@@ -467,7 +467,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 60px;
+  padding: 31px 60px;
   box-sizing: border-box;
 }
 
@@ -486,7 +486,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 65px;
+  padding: 31px 65px;
   box-sizing: border-box;
 }
 
@@ -505,7 +505,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 32px 75px;
+  padding: 31px 75px;
   box-sizing: border-box;
 }
 
@@ -936,6 +936,7 @@ input[type="radio"].visually-hidden {
 
 .website {
   padding-left: 118px;
+  padding-bottom: 2px;
 }
 
 .footer-copyright a {
@@ -952,6 +953,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: 30px;
+  padding-bottom: 4px;
 }
 
 .social.list-reset {
@@ -973,6 +975,7 @@ input[type="radio"].visually-hidden {
 
 .social.list-reset li {
   margin-right: 5px;
+  padding-bottom: 5px;
 }
 
 .social-button {
