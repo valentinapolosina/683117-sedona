@@ -63,12 +63,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   background-color: #ffffff;
   width: 100%;
-  min-height: 510px;
+  height: 510px;
   background-size: cover;
-}
-
-.main-promo img {
-  padding-top: 75px;
 }
 
 .main-promo::before {
@@ -766,7 +762,7 @@ input[type="radio"].visually-hidden {
 }
 
 .adults {
-  width: 248px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,16 +777,16 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 16px;
-  margin-right: 4px;
+  margin-right: 0px;
 }
 
 .children {
-  width: 179px;
+  width: 250px;
   padding-left: 50px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-bottom: 16px;
-  margin-right: 41px;
+  margin-right: 0px;
 }
 
 .button-wrapper {
@@ -816,6 +812,7 @@ input[type="radio"].visually-hidden {
   height: 38px;
   padding-left: 10px;
   padding-top: 5px;
+  margin-left: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer;
@@ -831,7 +828,7 @@ input[type="radio"].visually-hidden {
   height: 38px;
   width: 39px;
   outline: none;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .button.plus-minus:hover,
@@ -1075,6 +1072,10 @@ input[type="radio"].visually-hidden {
 .list-reset ul {
   margin: 0;
   padding: 0;
+}
+
+.list-reset p {
+  margin: 0;
 }
 
 .search-hotel {
@@ -1664,7 +1665,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin-right: 30px;
   width: 1200px;
-  min-height: 85px;
+  height: 85px;
   border-bottom: 1px solid #cacaca
 }
 
