@@ -860,9 +860,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   text-align: center;
   display: block;
-  margin-top: 24px;
+  margin-top: 22px;
   width: 460px;
-  min-height: 55px;
+  min-height: 57px;
   background-color: #81b3d2;
   color: #ffffff;
 }
