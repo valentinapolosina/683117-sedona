@@ -612,7 +612,7 @@ input[type="radio"].visually-hidden {
   height: 38px;
   outline: none;
   cursor: pointer;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .input-wrapper {
@@ -718,7 +718,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   fill: #a9a9a9;
   right: 7px;
-  bottom: 15px;
+  bottom: 16px;
 }
 
 .appointment-item {
@@ -804,13 +804,12 @@ input[type="radio"].visually-hidden {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin-left: 26px;
-  margin-top: 2px;
 }
 
 .appointment-item.date input {
-  width: 343px;
+  width: 345px;
   height: 38px;
-  padding-left: 10px;
+  padding-left: 13px;
   padding-top: 5px;
   margin-left: 15px;
   -webkit-box-sizing: border-box;
